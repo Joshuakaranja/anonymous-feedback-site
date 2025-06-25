@@ -1,0 +1,124 @@
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4ff, #dfe9f3);
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* ===== Feedback Form ===== */
+#feedback-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+#feedback-form textarea,
+#feedback-form input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#feedback-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#feedback-form button:hover {
+  background-color: #4338ca;
+}
+
+/* ===== Feedback List ===== */
+.feedback {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.feedback p {
+  margin: 0.5rem 0;
+}
+
+.reactions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.reactions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.feedback .actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.feedback .actions button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== Filter/Search ===== */
+#filter-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filter-bar input[type="date"],
+#filter-bar input[type="search"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .feedback {
+    padding: 1rem;
+  }
+
+  #filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anonymous Feedback</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Anonymous Feedback Wall</h1>
+    <p>Share your thoughts. React. Comment. Stay Anonymous.</p>
+  </header>
+
+  <section id="feedback-form-section">
+    <h2>Post Your Feedback</h2>
+    <form id="feedback-form">
+      <textarea name="content" id="content" rows="4" placeholder="Write your feedback here..." required></textarea>
+      <div class="form-actions">
+        <button type="submit">Submit Feedback</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="filter-section">
+    <input type="search" id="search-input" placeholder="Search feedback...">
+    <input type="date" id="start-date">
+    <input type="date" id="end-date">
+  </section>
+
+  <section id="feedback-list-section">
+    <h2>Community Feedback</h2>
+    <ul id="feedback-list">
+      <!-- Feedback posts will be dynamically inserted here -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anonymous Feedback. All rights reserved.</p>
+  </footer>
+
+  <script src="src /index.js"></script>
+</body>
+</html>
