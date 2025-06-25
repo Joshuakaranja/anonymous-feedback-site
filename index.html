@@ -10,15 +10,15 @@
   <header>
     <h1>📝 Anonymous Feedback Wall</h1>
     <p>Share your thoughts. React. Comment. Stay Anonymous.</p>
-    <div class="form-actions-inline top-right-controls">
+    <div class="top-right-controls">
       <input type="search" id="search-input" placeholder="Search feedback...">
-      <label for="filter-date">Filter by Date:</label>
+      <label for="filter-date">Date:</label>
       <input type="date" id="filter-date">
+      <button type="submit">Post Your Feedback</button>
     </div>
   </header>
 
   <section id="feedback-form-section">
-    <h2>Post Your Feedback</h2>
     <form id="feedback-form">
       <textarea name="content" id="content" rows="4" placeholder="Write your feedback here..." required></textarea>
       <div class="form-actions-inline">
@@ -31,6 +31,13 @@
     <h2>Community Feedback</h2>
     <ul id="feedback-list">
       <!-- Feedback posts will be dynamically inserted here -->
+      <li class="feedback-item">
+        <p>This is a sample feedback to show layout.</p>
+        <div class="feedback-controls">
+          <button class="thumbs-up">👍</button>
+          <button class="delete-btn">🗑️ Delete</button>
+        </div>
+      </li>
     </ul>
   </section>
 
