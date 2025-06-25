@@ -1,95 +1,133 @@
-/* styles.css */
-
-/* General Layout */
-body {
-  font-family: Arial, sans-serif;
-  background-color: white;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
   color: black;
+  padding: 20px;
 }
 
 header {
-  background-color: lightgray;
-  padding: 20px;
   text-align: center;
-  position: relative;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: gray;
 }
 
 .top-right-controls {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
-  align-items: center;
+  margin-top: 10px;
 }
 
 #search-input,
-#filter-date {
-  padding: 5px;
-  border: 1px solid gray;
-  border-radius: 5px;
+#filter-date,
+.top-right-controls button {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
 }
 
-button {
-  padding: 6px 12px;
-  background-color: green;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: darkgreen;
-}
-
-#feedback-form-section {
-  padding: 20px;
+section#feedback-form-section {
+  margin-bottom: 30px;
 }
 
 #feedback-form textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  resize: vertical;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.form-actions-inline {
-  margin-top: 10px;
-  display: flex;
-  justify-content: flex-end;
+#feedback-form input[type="url"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-#feedback-list-section {
-  padding: 20px;
+.form-actions-inline button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#feedback-list-section h2 {
+  margin-bottom: 15px;
 }
 
 #feedback-list {
   list-style: none;
-  padding: 0;
 }
 
 .feedback-item {
-  background-color: whitesmoke;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  background-color: lightgray;
   padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.feedback-item p {
   margin-bottom: 10px;
 }
 
+.feedback-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
 .feedback-controls {
-  margin-top: 10px;
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+}
+
+.thumbs-up,
+.delete-btn {
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.thumbs-up {
+  background-color: green;
+  color: white;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
-  background-color: lightgray;
-  color: black;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: gray;
 }
