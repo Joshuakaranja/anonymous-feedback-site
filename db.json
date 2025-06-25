@@ -2,21 +2,13 @@
   "feedbacks": [
     {
       "id": 1,
-      "content": "This site is super cool! I love the concept.",
-      "likes": 2,
-      "date": "2025-06-25"
+      "content": "This is a sample feedback!",
+      "likes": 2
     },
     {
       "id": 2,
-      "content": "Could use a dark mode toggle. Otherwise, amazing!",
-      "likes": 5,
-      "date": "2025-06-24"
-    },
-    {
-      "id": 3,
-      "content": "Appreciate the anonymity. Helped me speak freely.",
-      "likes": 3,
-      "date": "2025-06-22"
+      "content": "Loving this community wall ❤️",
+      "likes": 5
     }
   ]
 }

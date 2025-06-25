@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anonymous Feedback</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
-    <h1>📝 Anonymous Feedback Wall</h1>
-    <p>Share your thoughts. React. Comment. Stay Anonymous.</p>
+    <div>
+      <h1>📝 Anonymous Feedback Wall</h1>
+      <p>Share your thoughts. React. Comment. Stay Anonymous.</p>
+    </div>
     <div class="top-right-controls">
-      <input type="search" id="search-input" placeholder="Search feedback...">
+      <input type="search" id="search-input" placeholder="Search feedback..." />
       <label for="filter-date">Date:</label>
-      <input type="date" id="filter-date">
-      <button type="submit">Post Your Feedback</button>
+      <input type="date" id="filter-date" />
+      <button id="post-feedback-btn">Post Your Feedback</button>
     </div>
   </header>
 
-  <section id="feedback-form-section">
+  <section id="feedback-form-section" style="display: none;">
     <form id="feedback-form">
-      <textarea name="content" id="content" rows="4" placeholder="Write your feedback here..." required></textarea>
+      <textarea id="content" rows="4" placeholder="Write your feedback here..." required></textarea>
       <div class="form-actions-inline">
         <button type="submit">Submit Feedback</button>
       </div>
@@ -30,14 +32,7 @@
   <section id="feedback-list-section">
     <h2>Community Feedback</h2>
     <ul id="feedback-list">
-      <!-- Feedback posts will be dynamically inserted here -->
-      <li class="feedback-item">
-        <p>This is a sample feedback to show layout.</p>
-        <div class="feedback-controls">
-          <button class="thumbs-up">👍</button>
-          <button class="delete-btn">🗑️ Delete</button>
-        </div>
-      </li>
+      <!-- Feedback items will be rendered here -->
     </ul>
   </section>
 

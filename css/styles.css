@@ -1,133 +1,132 @@
-/* Reset some default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: sans-serif;
   background-color: white;
   color: black;
-  padding: 20px;
 }
 
+/* Header */
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
+  flex-wrap: wrap;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 24px;
 }
 
 header p {
-  font-size: 1.2rem;
+  margin: 5px 0;
+  font-size: 14px;
   color: gray;
 }
 
 .top-right-controls {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   gap: 10px;
   margin-top: 10px;
 }
 
-#search-input,
-#filter-date,
-.top-right-controls button {
-  padding: 8px;
-  font-size: 1rem;
+.top-right-controls input[type="search"],
+.top-right-controls input[type="date"] {
+  padding: 6px;
   border: 1px solid lightgray;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-section#feedback-form-section {
-  margin-bottom: 30px;
+.top-right-controls button {
+  background-color: green;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-right-controls button:hover {
+  background-color: darkgreen;
+}
+
+/* Form Section */
+#feedback-form-section {
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
 }
 
 #feedback-form textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1rem;
   border: 1px solid lightgray;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
 }
 
-#feedback-form input[type="url"] {
-  width: 100%;
-  padding: 8px;
-  font-size: 1rem;
-  border: 1px solid lightgray;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.form-actions-inline {
+  margin-top: 10px;
+  text-align: right;
 }
 
 .form-actions-inline button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: green;
+  background-color: blue;
   color: white;
+  padding: 8px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-#feedback-list-section h2 {
-  margin-bottom: 15px;
+.form-actions-inline button:hover {
+  background-color: darkblue;
 }
 
-#feedback-list {
-  list-style: none;
+/* Feedback List */
+#feedback-list-section {
+  padding: 20px 30px;
 }
 
 .feedback-item {
-  background-color: lightgray;
+  background-color: #f9f9f9;
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-}
-
-.feedback-item p {
   margin-bottom: 10px;
-}
-
-.feedback-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 4px;
+  border-left: 4px solid green;
+  border-radius: 5px;
+  list-style: none;
 }
 
 .feedback-controls {
+  margin-top: 10px;
   display: flex;
   gap: 10px;
 }
 
-.thumbs-up,
-.delete-btn {
-  padding: 6px 10px;
-  font-size: 1rem;
-  cursor: pointer;
+.feedback-controls button {
   border: none;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.thumbs-up {
-  background-color: green;
-  color: white;
+.feedback-controls .thumbs-up {
+  background-color: lightgreen;
 }
 
-.delete-btn {
-  background-color: red;
-  color: white;
+.feedback-controls .delete-btn {
+  background-color: lightcoral;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: gray;
+  padding: 15px;
+  background-color: #eee;
+  font-size: 14px;
+  color: #555;
 }
