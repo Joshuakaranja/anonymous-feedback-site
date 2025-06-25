@@ -16,16 +16,13 @@
     <h2>Post Your Feedback</h2>
     <form id="feedback-form">
       <textarea name="content" id="content" rows="4" placeholder="Write your feedback here..." required></textarea>
-      <div class="form-actions">
+      <div class="form-actions-inline">
         <button type="submit">Submit Feedback</button>
+        <input type="search" id="search-input" placeholder="Search feedback...">
+        <label for="filter-date">Filter by Date:</label>
+        <input type="date" id="filter-date">
       </div>
     </form>
-  </section>
-
-  <section id="filter-section">
-    <input type="search" id="search-input" placeholder="Search feedback...">
-    <input type="date" id="start-date">
-    <input type="date" id="end-date">
   </section>
 
   <section id="feedback-list-section">
