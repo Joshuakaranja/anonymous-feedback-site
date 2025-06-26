@@ -1,11 +1,11 @@
-const feedbackList = document.getElementById('feedback-list');
+const feedbackList = document.getElementById('feedback-list');  
 const feedbackFormSection = document.getElementById('feedback-form-section');
 const feedbackForm = document.getElementById('feedback-form');
 const contentInput = document.getElementById('content');
 const postFeedbackBtn = document.getElementById('post-feedback-btn');
 const searchInput = document.getElementById('search-input');
 
-const API_URL = 'http://localhost:3000/feedbacks';
+const API_URL = 'https://anonymous-server-mt7t.onrender.com/feedbacks';
 
 // Load feedbacks on DOM load
 document.addEventListener('DOMContentLoaded', fetchFeedbacks);
