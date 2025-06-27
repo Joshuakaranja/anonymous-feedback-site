@@ -1,23 +1,38 @@
-### License
+# Anonymous Feedback Wall  
+#### A platform to express anonymous opinions and reactions on trending topics, June 2025  
+#### By **Joshua Karanja**
 
-MIT License
+## Description  
+This is an interactive web application that allows users to express their thoughts anonymously, especially on trending or sensitive topics discussed in institutions or social platforms.  
+Users can post feedback, update or delete it, react to posts with thumbs up, and search through posts. The goal is to educate, express, and open up honest conversations anonymously.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the “Software”), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:
+## Setup/Installation Requirements  
+* Clone the repository from GitHub:  
+  `https://github.com/Joshuakaranja/anonymous-feedback-site`  
+* Open the project folder.  
+* Ensure all files are in the same directory:  
+  `index.html`, `css/styles.css`, `src/index.js`, `db.json`  
+* Run the JSON server:  
+  `json-server --watch db.json`  
+* Open `index.html` in your browser or use VS Code’s Live Server extension.  
 
-The above copyright notice and this permission notice shall be included in all  
-copies or substantial portions of the Software.
+## Known Bugs  
+There are no known bugs at the moment.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
-SOFTWARE.
+## Technologies Used  
+* HTML5  
+* CSS3  
+* JavaScript (ES6+)  
+* JSON Server  
+* Fetch API  
+* DOM Manipulation  
+* Event Handling
 
+## Support and contact details  
+For questions, ideas, bugs or suggestions, please reach out:  
+* GitHub: [@Joshuakaranja](https://github.com/Joshuakaranja)  
+* Email: [jokaranja26@gmail.com](mailto:jokaranja26@gmail.com)
+
+### License  
+*MIT License*  
 Copyright (c) 2025 **Joshua Karanja**
