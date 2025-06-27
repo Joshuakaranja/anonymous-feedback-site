@@ -8,13 +8,17 @@ Users can post feedback, update or delete it, react to posts with thumbs up, and
 
 ## Setup/Installation Requirements  
 * Clone the repository from GitHub:  
-  `https://github.com/Joshuakaranja/anonymous-feedback-site`  
+  [https://github.com/Joshuakaranja/anonymous-feedback-site](https://github.com/Joshuakaranja/anonymous-feedback-site)  
 * Open the project folder.  
 * Ensure all files are in the same directory:  
   `index.html`, `css/styles.css`, `src/index.js`, `db.json`  
-* Run the JSON server:  
+* Run the JSON server locally (optional for local testing):  
   `json-server --watch db.json`  
-* Open `index.html` in your browser or use VS Code’s Live Server extension.  
+* Open `index.html` in your browser or use VS Code’s Live Server extension.
+
+## Deployed Links  
+* 🌐 Live API: [https://anonymous-server-mt7t.onrender.com/feedbacks](https://anonymous-server-mt7t.onrender.com/feedbacks)  
+* 📂 GitHub Repository: [https://github.com/Joshuakaranja/anonymous-feedback-site](https://github.com/Joshuakaranja/anonymous-feedback-site)
 
 ## Known Bugs  
 There are no known bugs at the moment.
